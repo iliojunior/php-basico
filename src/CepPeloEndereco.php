@@ -19,7 +19,7 @@ class CepPeloEndereco implements IBuscable
     {
         $client = new Client();
 
-        $url = sprintf("https://viacep.com.br/ws/%s/json", $this->cep);
+        $url = sprintf('https://viacep.com.br/ws/%s/json', $this->cep);
         $response = $client->request('GET', $url);
 
         if ($response->getStatusCode() != 200) {
