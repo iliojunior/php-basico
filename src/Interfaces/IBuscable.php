@@ -4,5 +4,5 @@ namespace Ilio\BuscadorCep\Interfaces;
 
 interface IBuscable
 {
-  public function buscar();
+    public function buscar();
 }
