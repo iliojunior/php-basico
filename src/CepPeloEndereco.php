@@ -28,5 +28,4 @@ class CepPeloEndereco implements IBuscable
 
         return json_decode($response->getBody());
     }
-
 }
