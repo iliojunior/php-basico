@@ -10,8 +10,7 @@ class CepPeloEndereco implements IBuscable
 {
     protected $cep;
 
-
-    public function __construct($cep) 
+    public function __construct($cep)
     {
         $this->cep = $cep;
     }
@@ -23,11 +22,11 @@ class CepPeloEndereco implements IBuscable
         $url = sprintf("https://viacep.com.br/ws/%s/json", $this->cep);
         $response = $client->request('GET', $url);
 
-        if ($response->getStatusCode() != 200)
-        {
+        if ($response->getStatusCode() != 200) {
             throw new ErroAoContactarViaCepException();
         }
 
         return json_decode($response->getBody());
     }
+
 }
