@@ -16,5 +16,13 @@
         "psr-4": {
             "Ilio\\BuscadorCep\\": "src"
         }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
     }
 }

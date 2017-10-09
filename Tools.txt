@@ -1,4 +1,0 @@
-Style-ci -> https://styleci.io
-Packagist -> https://packagist.org/
-Travis-ci -> https://travis-ci.org
-Scrutinizer -> https://scrutinizer-ci.com/
