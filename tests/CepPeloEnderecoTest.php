@@ -15,8 +15,8 @@ class CepPeloEnderecoTest extends TestCase
     }
 
     /**
-    * @expectedException GuzzleHttp\Exception\ClientException
-    */
+     * @expectedException GuzzleHttp\Exception\ClientException
+     */
     public function testComCepInexistente()
     {
         $client = new CepPeloEndereco(99999999999);
